@@ -1,0 +1,13 @@
+data fetch from 1 module to anothode module (spare part module to inquiry module )
+
+if(Spare_Parts[ID == input.Part_Id].count() > 0)
+{
+	info input.ID;
+	search = Spare_Parts[ID == input.Part_Id];
+	input.Part_Name = search.Part_Name;
+	disable Part_Name;
+	input.Part_Description = search.Description;
+	disable Part_Description;
+	input.Part_Amount = search.Par_Amount;
+	disable Part_Amount;
+}
