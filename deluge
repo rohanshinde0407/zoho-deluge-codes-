@@ -11,3 +11,34 @@ if(Spare_Parts[ID == input.Part_Id].count() > 0)
 	input.Part_Amount = search.Par_Amount;
 	disable Part_Amount;
 }
+*******************************************************************************************************8
+
+data transfer from 1 module to second module
+
+if(VIN[ID == input.VIN_number].count() > 0)
+{
+	info input.ID;
+	search = VIN[ID = input.VIN_number];
+	input.Engine_Number = search.Engine_Number;
+	disable Engine_Number;
+	input.Milage = search.Milage;
+	disable Milage;
+	input.Registration_Date = search.Registration_Date;
+	disable Registration_Date;
+	input.Reg_state = search.Reg_state;
+	disable Reg_state;
+	input.Fuel_Type = search.Fuel_Type;
+	disable Fuel_Type;
+	input.Model_Description = search.Model_Description;
+	disable Model_Description;
+	input.Model_Code1 = search.Model_Code;
+	disable Model_Code1;
+	input.Accessories = search.Accessories;
+	disable Accessories;
+	input.RO_Date = search.RO_Date;
+	disable RO_Date;
+}
+**********************************************************************************************88
+
+
+ 
